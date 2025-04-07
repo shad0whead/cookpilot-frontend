@@ -6,7 +6,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyAsibHw3ga2sh65MAMZSHybShbQ08qSjew",
   authDomain: "cookpilot-121da.firebaseapp.com",
   projectId: "cookpilot-121da",
-  storageBucket: "cookpilot-121da.firebasestorage.app",
+  storageBucket: "cookpilot-121da.appspot.com",
   messagingSenderId: "780105646457",
   appId: "1:780105646457:web:d8dcde5f94f5d7acebefa8",
   measurementId: "G-NP3X0EYWHE"

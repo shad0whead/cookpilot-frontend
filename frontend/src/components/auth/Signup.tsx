@@ -26,8 +26,9 @@ const Signup: React.FC<SignupProps> = ({ onToggleForm }) => {
       setLoading(true);
       await signup(email, password);
       // Successful signup will be handled by the auth state change in the context
-    } catch (err) {
-      setError('Failed to create an account');
+      window.location.href = '/login'; // Redirect to login page after successful signup
+    } catch (err: any) {
+      setError(err.message || 'Failed to create an account');
       console.error(err);
     } finally {
       setLoading(false);
