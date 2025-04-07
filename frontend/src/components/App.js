@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Login from './auth/Login';
-import Signup from './auth/Signup';
-import SearchInterface from './recipes/SearchInterface';
+import Login from './auth/Login.tsx';
+import Signup from './auth/Signup.tsx';
+import SearchInterface from './recipes/SearchInterface.tsx';
 import { useAuth } from '../contexts/AuthContext.tsx';
 
 function App() {
