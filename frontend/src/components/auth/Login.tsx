@@ -20,9 +20,10 @@ const Login: React.FC<LoginProps> = ({ onToggleForm }) => {
       setError('');
       setLoading(true);
       await login(email, password);
-      // Successful login will be handled by the auth state change in the context
-    } catch (err) {
-      setError('Failed to sign in. Please check your credentials.');
+      // Redirect to home page after successful login
+      window.location.href = '/';
+    } catch (err: any) {
+      setError(err.message || 'Failed to sign in. Please check your credentials.');
       console.error(err);
     } finally {
       setLoading(false);
