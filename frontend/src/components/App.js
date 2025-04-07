@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from './auth/Login';
 import Signup from './auth/Signup';
 import SearchInterface from './recipes/SearchInterface';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext.tsx';
 
 function App() {
   const { currentUser } = useAuth();
