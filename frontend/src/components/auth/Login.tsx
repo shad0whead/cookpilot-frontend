@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../contexts/AuthContext.tsx';
+import { Link } from 'react-router-dom';
 
 interface LoginProps {
   onToggleForm?: () => void;
@@ -74,13 +75,9 @@ const Login: React.FC<LoginProps> = ({ onToggleForm }) => {
         </div>
         
         <div className="text-center">
-          <button
-            type="button"
-            onClick={onToggleForm}
-            className="text-sm text-green-400 hover:text-green-300"
-          >
+          <Link to="/signup" className="text-sm text-green-400 hover:text-green-300">
             Need an account? Sign Up
-          </button>
+          </Link>
         </div>
       </form>
     </div>

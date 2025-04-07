@@ -18,7 +18,7 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-background-darkmode text-textColor-darkmode">
+      <div className="min-h-screen bg-background-darkmode text-textColor-darkmode flex justify-center items-center">
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
